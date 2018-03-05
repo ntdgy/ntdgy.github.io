@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.weiboShow .S_title_bg, .weiboShow .weiboShow_title, .weiboShow .weiboShow_topborder { background-color: rgb(219, 237, 200); }
+
+.weiboShow .S_title_c { color: rgb(219, 237, 200); }
+
+.weiboShow * { border-top-color: rgb(197, 213, 180); border-right-color: rgb(197, 213, 180); border-bottom-color: rgb(197, 213, 180); border-left-color: rgb(197, 213, 180); }
+
+.weiboShow .S_border_c, .weiboShow .weiboShow_vline { color: rgb(197, 213, 180); }
+
+.weiboShow .S_border_bg { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(197, 213, 180); background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.weiboShow_noborder .weiboShow_topborder { background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: initial !important; background-size: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+
+.weiboShow { color: rgb(68, 68, 68); }
+
+.weiboShow .weiboShow_developerDetail_namedir { color: rgb(68, 68, 68); }
+
+.weiboShow .WB_linkA, .weiboShow .WB_linkA a, .weiboShow a { color: rgb(106, 151, 84); }
+
+.weiboShow .WB_linkB, .weiboShow .WB_linkB a { color: rgb(106, 151, 84); }
+
+.weiboShow .weiboShow_wrap { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(247, 252, 246); background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.weiboShow .S_focus_bg, .weiboShow .weiboShow_mainFeed_list:hover, .weiboShow .weiboShow_mainFeed_list_focus { background-color: rgb(240, 255, 224); }
+
+.weiboShow .weiboShow_arrbar_up { background-image: -webkit-linear-gradient(left, rgb(232, 232, 232) 0px, rgb(225, 225, 225) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.weiboShow .weiboShow_arrbar_down { background-image: -webkit-linear-gradient(left, rgb(225, 225, 225) 0px, rgb(232, 232, 232) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.weiboShow .weiboShow_arrbar_up em { border-bottom-color: rgb(195, 195, 195); }
+
+.weiboShow .weiboShow_arrbar_down em { border-top-color: rgb(195, 195, 195); }
+
+.weiboShow .weiboShow_arrbar_up:hover { background-image: -webkit-linear-gradient(left, rgb(219, 237, 200) 0px, rgb(184, 213, 155) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.weiboShow .weiboShow_arrbar_down:hover { background-image: -webkit-linear-gradient(left, rgb(184, 213, 155) 0px, rgb(219, 237, 200) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.weiboShow .weiboShow_arrbar_up:hover em { border-bottom-color: rgb(126, 159, 90); }
+
+.weiboShow .weiboShow_arrbar_down:hover em { border-top-color: rgb(126, 159, 90); }

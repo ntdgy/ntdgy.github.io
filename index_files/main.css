@@ -1,0 +1,597 @@
+* { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; }
+
+ul, li, dt, dd { list-style-type: none; list-style-position: initial; list-style-image: initial; }
+
+:hover { -webkit-transition-duration: 0.4s, 0.5s; -webkit-transition-property: background-color, color; -webkit-transition-timing-function: ease, ease; }
+
+.mar-r-4 { margin-right: 4px; }
+
+pre { position: relative; overflow-x: auto; overflow-y: auto; margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 10px; padding-right: 15px; padding-bottom: 10px; padding-left: 15px; width: auto; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-top-color: rgb(242, 242, 242); border-right-color: rgb(242, 242, 242); border-bottom-color: rgb(242, 242, 242); border-image: initial; border-left-width: 4px; border-left-style: solid; border-left-color: rgb(204, 0, 0); background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(250, 250, 250); background-size: initial; color: rgb(85, 85, 85); text-align: left; word-wrap: break-word; font-family: 宋体; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 25px; background-position: initial initial; background-repeat: initial initial; }
+
+.overflow { overflow-x: hidden; overflow-y: hidden; }
+
+a { text-decoration: none; color: rgb(51, 51, 51); }
+
+a:hover { text-decoration: none; }
+
+input, textarea { outline-style: none; outline-width: initial; outline-color: initial; }
+
+h1, h2, h3, h4 { font-weight: normal; font-size: 12px; }
+
+.fa-16 { font-size: 16px !important; color: rgb(255, 255, 255); margin-right: 5px; }
+
+.mar-l-10 { margin-left: 10px !important; }
+
+.mar-r-8 { margin-right: 8px !important; }
+
+.fa-link { color: rgb(63, 72, 44); }
+
+.clear { clear: both; }
+
+#web_bg { left: 0px; top: 0px; position: absolute; width: 100%; height: 100%; z-index: -9999; }
+
+#web_bg img { position: fixed; top: 0px; left: 0px; }
+
+#bodybg { display: none; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(0, 0, 0); background-size: initial; z-index: 1000; opacity: 0.7; background-position: initial initial; background-repeat: initial initial; }
+
+body { font-family: 'Microsoft Yahei'; font-size: 12px; background-color: rgb(106, 132, 100); }
+
+.header { width: 100%; height: 190px; background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/headbg.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(106, 132, 100); background-size: initial; overflow-x: hidden; overflow-y: hidden; background-position: 50% 0%; background-repeat: no-repeat no-repeat; }
+
+.header .head { width: 980px; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; position: relative; }
+
+.head .logo { position: absolute; top: 60px; left: 45px; }
+
+.head .logo h1 { font-size: 24px; text-shadow: rgb(0, 0, 0) 1px 1px 1px; }
+
+.head .logo h1 a { color: rgb(255, 255, 255); }
+
+.head .logo h3 { font-size: 12px; font-family: 宋体; color: rgb(238, 238, 238); padding-top: 15px; text-shadow: rgb(0, 0, 0) 1px 1px 1px; }
+
+.head .logo:hover { -webkit-animation-name: wobble; }
+
+.head .topsearch { position: absolute; top: 80px; right: 0px; box-shadow: rgba(0, 0, 0, 0.296875) 0px 2px 1px 0px; }
+
+.topsearch .search { float: left; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 20px; height: 20px; background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/search.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; opacity: 0.8; border-top-left-radius: 4px; border-bottom-left-radius: 4px; background-position: 0px 5px; background-repeat: no-repeat no-repeat; }
+
+.topsearch .submit { float: left; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; height: 30px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(146, 179, 121); background-size: initial; color: rgb(255, 255, 255); font-family: 'Microsoft Yahei'; line-height: 20px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; cursor: pointer; background-position: initial initial; background-repeat: initial initial; }
+
+.topsearch .submit:hover { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(145, 166, 129); background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.head .toptext { position: absolute; top: 65px; right: 0px; color: rgb(255, 255, 255); text-shadow: rgb(0, 0, 0) 1px 1px 1px; width: 300px; line-height: 28px; font-family: 宋体; -webkit-animation-duration: 1s; -webkit-animation-fill-mode: both; }
+
+.head .toptext:hover { -webkit-animation-name: wobble; }
+
+.menu { width: 980px; height: 40px; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; background-color: rgb(145, 166, 129); box-shadow: rgba(0, 0, 0, 0.296875) 0px 2px 1px 0px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
+
+.menu ul { float: left; }
+
+.menu ul li { float: left; height: 100%; line-height: 39px; letter-spacing: 2px; padding-top: 0px; padding-right: 20px; padding-bottom: 0px; padding-left: 20px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(179, 190, 170); }
+
+.menu ul li:nth-child(1) { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+
+.menu ul li.current, .menu ul li:hover { background-color: rgb(146, 179, 121); }
+
+.menu ul li a { color: rgb(255, 255, 255); font-size: 14px; -webkit-animation-duration: 1s; -webkit-animation-fill-mode: both; }
+
+.menu ul li a:hover { -webkit-animation-name: bounceIn; }
+
+.menu .sub-nav { position: absolute; z-index: 99999; display: none; width: auto; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; margin-left: -20px; -webkit-animation-duration: 1s; -webkit-animation-fill-mode: both; }
+
+.menu .sub-nav li { float: none; background-color: rgb(145, 166, 129); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; }
+
+.menu .sub-nav li a { color: rgb(255, 255, 255); }
+
+.menu .sub-nav li:hover { background-color: rgb(146, 179, 121); }
+
+.menu .sub-nav li:nth-child(1) { border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; }
+
+.wrap { width: 980px; margin-top: 10px; margin-right: auto; margin-bottom: 0px; margin-left: auto; }
+
+.wrap .main_left { float: left; width: 720px; }
+
+.main_left .hot_box { margin-top: 0px; }
+
+.hot_box ul { display: inline-block; }
+
+.hot_box ul li { float: left; margin-top: 0px; margin-right: 10px; margin-bottom: 0px; margin-left: 0px; width: 164px; height: 148px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(225, 230, 224); background-size: initial; position: relative; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; overflow-x: hidden; overflow-y: hidden; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; -webkit-transition-property: all; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease; -webkit-transition-delay: 0ms; background-position: initial initial; background-repeat: initial initial; }
+
+.hot_box ul li:hover { opacity: 0.8; }
+
+.hot_box ul li:hover img { -webkit-animation-name: bounceIn; }
+
+.hot_box ul li img { width: 164px; height: 148px; -webkit-animation-duration: 1s; -webkit-animation-fill-mode: both; }
+
+.hot_box .bg { width: 164px; height: 25px; position: absolute; bottom: 4px; left: 4px; right: 4px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(145, 166, 129); background-size: initial; opacity: 0.7; z-index: 1; background-position: initial initial; background-repeat: initial initial; }
+
+.hot_box h2 { width: 154px; height: 25px; line-height: 25px; padding-top: 0px; padding-right: 5px; padding-bottom: 0px; padding-left: 5px; bottom: 4px; left: 4px; right: 4px; position: absolute; z-index: 2; color: rgb(255, 255, 255); font-family: 宋体; white-space: nowrap; overflow-x: hidden; overflow-y: hidden; text-overflow: ellipsis; text-align: center; }
+
+.hot_box h2 a { color: rgb(255, 255, 255); }
+
+.hot_box ul li:nth-child(4n) { margin-right: 0px; }
+
+.main_left .lujing { color: rgb(65, 69, 65); background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(225, 230, 224); background-size: initial; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; font-size: 13px; white-space: nowrap; overflow-x: hidden; overflow-y: hidden; text-overflow: ellipsis; background-position: initial initial; background-repeat: initial initial; }
+
+.lujing a { color: rgb(65, 69, 65); }
+
+.lujing a:hover { text-decoration: underline; }
+
+.main_left .list_box { background-color: rgb(225, 230, 224); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(145, 166, 129); border-right-color: rgb(145, 166, 129); border-bottom-color: rgb(145, 166, 129); border-left-color: rgb(145, 166, 129); border-image: initial; margin-top: 10px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
+
+.list_box ul { display: inline-block; width: 100%; }
+
+.list_box ul li { width: 100%; display: inline-block; margin-bottom: 10px; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(146, 179, 121); padding-bottom: 10px; }
+
+.list_box ul li .thumimg { float: left; width: 160px; height: 140px; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-position: initial initial; background-repeat: initial initial; }
+
+.list_box ul li .thumimg:hover { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(193, 197, 191); background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.list_box ul li .thumimg:hover img { -webkit-animation-name: pulse; }
+
+.list_box ul li .thumimg img { width: 160px; height: 140px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; -webkit-animation-duration: 1s; -webkit-animation-fill-mode: both; }
+
+.list_box ul li .info { margin-left: 175px; }
+
+.list_box ul li .info h2 { font-size: 16px; white-space: nowrap; overflow-x: hidden; overflow-y: hidden; text-overflow: ellipsis; padding-bottom: 5px; text-shadow: rgb(204, 204, 204) 1px 1px 1px, rgba(0, 0, 0, 0.148438) 0px 0px 0px; }
+
+.list_box ul li .info h2 a { color: rgb(79, 114, 0); -webkit-animation-duration: 1s; -webkit-animation-fill-mode: both; }
+
+.list_box ul li .info h2 a:hover { text-decoration: underline; -webkit-animation-name: bounceIn; }
+
+.list_box ul li .info .date { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(209, 210, 207); padding-bottom: 10px; }
+
+.list_box ul li .info .date span { margin-top: 5px; font-family: 宋体; font-size: 12px; color: rgb(99, 113, 96); margin-right: 10px; }
+
+.list_box ul li .info .date span a { color: rgb(99, 113, 96); }
+
+.list_box ul li .info .date span a:hover { text-decoration: underline; }
+
+.list_box ul li .info .desc { margin-top: 5px; color: rgb(99, 113, 96); font-family: 宋体; line-height: 25px; text-indent: 2em; height: 80px; overflow-x: hidden; overflow-y: hidden; }
+
+#pagenavi { width: 100%; text-align: center; padding-bottom: 10px; }
+
+#pagenavi span { display: inline-block; margin-top: 10px; margin-right: 5px; margin-bottom: 0px; margin-left: 0px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(138, 166, 83); background-size: initial; color: rgb(255, 255, 255); font-size: 14px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-position: initial initial; background-repeat: initial initial; }
+
+#pagenavi a { display: inline-block; margin-top: 10px; margin-right: 5px; margin-bottom: 0px; margin-left: 0px; color: rgb(106, 132, 100); font-size: 14px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(242, 239, 239); background-size: initial; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-position: initial initial; background-repeat: initial initial; }
+
+#pagenavi em { display: inline-block; margin-top: 10px; margin-right: 5px; margin-bottom: 0px; margin-left: 0px; color: rgb(106, 132, 100); font-size: 14px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(242, 239, 239); background-size: initial; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-position: initial initial; background-repeat: initial initial; }
+
+#pagenavi a:hover { color: rgb(255, 255, 255); background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(138, 166, 83); background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.main_left .content_box { background-color: rgb(225, 230, 224); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(145, 166, 129); border-right-color: rgb(145, 166, 129); border-bottom-color: rgb(145, 166, 129); border-left-color: rgb(145, 166, 129); border-image: initial; margin-top: 10px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
+
+.content_box p { line-height: 25px; }
+
+.content_box h2 { text-align: center; text-shadow: rgb(204, 204, 204) 1px 1px 1px, rgba(0, 0, 0, 0.148438) 0px 0px 0px; color: rgb(79, 114, 0); font-size: 24px; margin-top: 15px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; -webkit-animation-duration: 1s; -webkit-animation-fill-mode: both; }
+
+.content_box h2:hover { -webkit-animation-name: pulse; }
+
+.content_box .date { text-align: center; font-family: 宋体; font-size: 12px; color: rgb(99, 113, 96); padding-bottom: 5px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(204, 204, 204); margin-top: 0px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; }
+
+.content_box .date a { color: rgb(99, 113, 96); }
+
+.content_box .content { color: rgb(42, 44, 41); line-height: 25px; max-width: 698px; }
+
+.content p { line-height: 25px; color: rgb(42, 44, 41); }
+
+.content img, .content div, .content pre { max-width: 698px; }
+
+.content .log_a { text-align: center; width: 100%; margin-top: 30px; margin-right: auto; margin-bottom: 10px; margin-left: auto; height: 45px; }
+
+.log_a .zd_comm { display: inline-block; margin-right: 20px; color: rgb(255, 255, 255); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(92, 184, 92); font-size: 14px; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px; font-weight: bold; box-shadow: rgba(0, 150, 0, 0.296875) 0px 0px 4px 1px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.148438) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.148438) 50%, rgba(255, 255, 255, 0.148438) 75%, transparent 75%, transparent); background-size: 30px; background-position: initial initial; background-repeat: initial initial; }
+
+.log_a .zd_share { display: inline-block; color: rgb(255, 255, 255); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(248, 93, 0); padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px; font-size: 14px; font-weight: bold; box-shadow: rgba(0, 150, 0, 0.296875) 0px 0px 4px 1px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.148438) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.148438) 50%, rgba(255, 255, 255, 0.148438) 75%, transparent 75%, transparent); background-size: 30px; background-position: initial initial; background-repeat: initial initial; }
+
+.log_a .zd_share a { color: rgb(255, 255, 255); }
+
+.log_a .zd_share a:hover { text-decoration: none; }
+
+.log_a .zd_qq { display: inline-block; margin-left: 20px; color: rgb(255, 255, 255); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(97, 171, 97); font-size: 14px; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px; font-weight: bold; box-shadow: rgba(0, 150, 0, 0.296875) 0px 0px 4px 1px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.148438) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.148438) 50%, rgba(255, 255, 255, 0.148438) 75%, transparent 75%, transparent); background-size: 30px; background-position: initial initial; background-repeat: initial initial; }
+
+.log_a .zd_qq a { color: rgb(255, 255, 255); }
+
+.log_a .zd_qq a:hover { text-decoration: none; }
+
+.zd_comm:hover, .zd_share:hover, .zd_qq:hover { background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(0, 175, 240); cursor: pointer; background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.148438) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.148438) 50%, rgba(255, 255, 255, 0.148438) 75%, transparent 75%, transparent); background-size: 40px; background-position: initial initial; background-repeat: initial initial; }
+
+#share_box { display: none; width: 425px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-image: initial; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; position: fixed; left: 0px; right: 0px; top: 250px; z-index: 1002; padding-top: 25px; padding-right: 25px; padding-bottom: 25px; padding-left: 25px; background-position: initial initial; background-repeat: initial initial; }
+
+#share_box a { margin-right: 15px; }
+
+.post_banquan { float: left; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; margin-bottom: 10px; margin-top: 10px; text-shadow: rgb(238, 238, 238) 1px 1px 0px; background-color: rgb(120, 183, 120); line-height: 20px; }
+
+.post_banquan .qrimg { float: left; margin-left: 10px; }
+
+.post_banquan ul { margin-left: 150px; overflow-x: hidden; overflow-y: hidden; margin-right: 10px; max-width: 538px; min-width: 160px; white-space: nowrap; text-overflow: ellipsis; }
+
+.post_banquan ul li { margin-bottom: 5px; font-size: 14px; color: rgb(0, 0, 0); }
+
+.post_banquan a { color: rgb(0, 0, 0); }
+
+.post_banquan a:hover { color: rgb(0, 0, 0); }
+
+.post_banquan .tags { text-shadow: none; font-size: 12px; }
+
+.post_banquan .tags a { float: left; display: block; margin-right: 5px; color: rgb(255, 255, 255); padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; }
+
+.post_banquan .tags a:hover { background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: rgb(153, 204, 51) !important; background-size: initial !important; background-position: initial initial !important; background-repeat: initial initial !important; }
+
+#related_log { background-color: rgb(225, 230, 224); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(145, 166, 129); border-right-color: rgb(145, 166, 129); border-bottom-color: rgb(145, 166, 129); border-left-color: rgb(145, 166, 129); border-image: initial; margin-top: 10px; width: 100%; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; overflow-x: hidden; overflow-y: hidden; }
+
+#related_log #related_tit { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(205, 220, 176); background-size: initial; font-size: 14px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px; color: rgb(63, 72, 44); font-weight: bold; text-shadow: rgb(255, 255, 255) 1px 1px 1px, rgba(250, 14, 14, 0.148438) 1px 2px 2px; border-top-left-radius: 4px; border-top-right-radius: 4px; background-position: initial initial; background-repeat: initial initial; }
+
+#related_log ul { display: inline-block; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; }
+
+#related_log ul li { width: 50%; height: 60px; float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; position: relative; }
+
+#related_log ul li p { line-height: normal; }
+
+#related_log img { width: 80px; height: 60px; float: left; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; -webkit-animation-duration: 1s; -webkit-animation-fill-mode: both; background-position: initial initial; background-repeat: initial initial; }
+
+#related_log img:hover { -webkit-animation-name: pulse; }
+
+#related_log a { font-family: 宋体; color: rgb(51, 51, 51); }
+
+#related_log .info { margin-left: 90px; max-width: 250px; white-space: nowrap; overflow-x: hidden; overflow-y: hidden; text-overflow: ellipsis; }
+
+#related_log .info h3 { color: rgb(68, 68, 68); }
+
+#related_log .info h3 a { color: rgb(68, 68, 68); }
+
+#related_log .info h3 a:hover { text-decoration: underline; }
+
+#related_log .info .date { font-family: 宋体; color: rgb(99, 113, 96); font-size: 12px; margin-top: 15px; }
+
+.main_left .ajax_comment { background-color: rgb(225, 230, 224); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(145, 166, 129); border-right-color: rgb(145, 166, 129); border-bottom-color: rgb(145, 166, 129); border-left-color: rgb(145, 166, 129); border-image: initial; margin-top: 10px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; display: inline-block; width: 100%; }
+
+.ajax_comment .title { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(205, 220, 176); background-size: initial; font-size: 14px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px; color: rgb(63, 72, 44); font-weight: bold; text-shadow: rgb(255, 255, 255) 1px 1px 1px, rgba(250, 14, 14, 0.148438) 1px 2px 2px; border-top-left-radius: 4px; border-top-right-radius: 4px; background-position: initial initial; background-repeat: initial initial; }
+
+.commt_box { margin-top: 10px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px; }
+
+.commt_box .comment-header { background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/plbg.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; height: 45px; background-position: 0px 1px; background-repeat: no-repeat no-repeat; }
+
+.commt_box .comment { padding-top: 15px; padding-right: 0px; padding-bottom: 15px; padding-left: 0px; float: left; width: 100%; border-top-width: 1px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.128906); }
+
+.comment:hover img { -webkit-transform: rotate(360deg); -webkit-transition-property: all; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: ease-in; -webkit-transition-delay: initial; }
+
+.comment:hover .comment-reply { display: initial; }
+
+.comment .avatar { float: left; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px; box-shadow: rgba(0, 0, 0, 0.296875) 0px 0px 1px 0px; width: 48px; height: 48px; }
+
+.comment .avatar:hover { box-shadow: rgba(9, 123, 9, 0.796875) 0px 0px 1px 0px; }
+
+.comment .avatar img { border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px; -webkit-animation-name: btn-pudding; -webkit-animation-duration: 1s; -webkit-animation-timing-function: linear; -webkit-animation-delay: initial; -webkit-animation-iteration-count: initial; -webkit-animation-direction: initial; -webkit-animation-fill-mode: initial; -webkit-transition-property: all; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; }
+
+.comment .comment-info { position: relative; padding-left: 70px; }
+
+.comment-info .louceng { font-size: 14px; color: rgb(153, 153, 153); position: absolute; top: 0px; right: 0px; }
+
+.comment-info .poster { font-size: 12px; font-weight: bold; color: rgb(102, 102, 102); padding-right: 10px; }
+
+.comment-info .poster a { color: rgb(102, 102, 102); }
+
+.comment-info .comment-time { padding-right: 10px; color: rgb(153, 153, 153); }
+
+.comment-info .comment-reply { color: rgb(153, 153, 153); display: none; }
+
+.comment-info .comment-reply a { color: rgb(153, 153, 153); }
+
+.comment-info .comment-content { padding-top: 10px; line-height: 25px; font-family: 宋体; overflow-x: hidden; overflow-y: hidden; }
+
+.comment-info .comment-content pre { margin-top: 5px !important; margin-right: 0px !important; margin-bottom: 5px !important; margin-left: 0px !important; font-family: 宋体 !important; font-size: 12px !important; font-style: normal !important; font-variant: normal !important; font-weight: 400 !important; line-height: 20px !important; border-left-width: 4px !important; border-left-style: solid !important; border-left-color: rgb(165, 154, 154) !important; }
+
+.comment .comment-children { margin-top: 20px; margin-right: 0px; margin-bottom: 0px; margin-left: 35px; padding-top: 15px; clear: both; border-top-width: 1px; border-top-style: solid; border-top-color: rgba(0, 0, 0, 0.128906); }
+
+.comment-children .avatar { width: 36px; height: 36px; }
+
+.comment-children .comment-info { padding-left: 60px !important; }
+
+#comment-place { clear: both; }
+
+.comment-post { position: relative; }
+
+.comment-post .place-header { display: none; background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/plbg.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; height: 45px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(138, 166, 83); background-position: 0px -102px; background-repeat: no-repeat no-repeat; }
+
+#commentform { margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; }
+
+.comment-post .textarea { border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-image: initial; padding-right: 20px; border-top-left-radius: 4px; border-top-right-radius: 4px; background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/bg_sprites.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; background-position: 0px -91px; background-repeat: repeat no-repeat; }
+
+.textarea textarea { width: 100%; height: 54px; outline-style: none; outline-width: initial; outline-color: initial; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; resize: none; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-size: initial; color: rgb(153, 153, 153); background-position: initial initial; background-repeat: initial initial; }
+
+.textarea textarea:focus { color: rgb(51, 51, 51); }
+
+.comment-post .comm_toolbar { position: relative; width: 100%; height: 30px; box-shadow: rgba(255, 255, 255, 0.597656) 0px 1px 0px; }
+
+.comm_toolbar .comm_tool { position: relative; height: 30px; background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/bg_sprites.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-image: initial; border-top-width: 0px; border-top-style: initial; border-top-color: initial; background-position: 0px -60px; background-repeat: repeat no-repeat; }
+
+.comm_toolbar .comm_tool .tool_bq { cursor: pointer; float: left; height: 30px; line-height: 30px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(204, 204, 204); text-align: center; font-size: 18px; padding-top: 0px; padding-right: 20px; padding-bottom: 0px; padding-left: 20px; background-color: rgb(230, 230, 230); background-image: -webkit-linear-gradient(top, rgb(252, 252, 252), rgb(252, 252, 252) 25%, rgb(230, 230, 230)); text-shadow: rgb(255, 255, 255) 0px 1px 0px; color: rgb(85, 85, 85); }
+
+.comm_toolbar .comm_tool .tool_bq:hover { background-image: linear-gradient(rgb(232, 231, 231), rgb(231, 229, 229) 25%, rgb(253, 253, 253)); color: rgb(138, 166, 83); }
+
+.comm_toolbar .comm_tool .tool_img { cursor: pointer; float: left; height: 30px; line-height: 30px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(204, 204, 204); text-align: center; font-size: 18px; padding-top: 0px; padding-right: 20px; padding-bottom: 0px; padding-left: 20px; background-color: rgb(230, 230, 230); background-image: -webkit-linear-gradient(top, rgb(252, 252, 252), rgb(252, 252, 252) 25%, rgb(230, 230, 230)); text-shadow: rgb(255, 255, 255) 0px 1px 0px; color: rgb(85, 85, 85); }
+
+.comm_toolbar .comm_tool .tool_img:hover { background-image: linear-gradient(rgb(232, 231, 231), rgb(231, 229, 229) 25%, rgb(253, 253, 253)); color: rgb(138, 166, 83); }
+
+.comm_toolbar .comm_tool .tool_qiand { cursor: pointer; float: left; height: 30px; line-height: 30px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(204, 204, 204); text-align: center; font-size: 18px; padding-top: 0px; padding-right: 20px; padding-bottom: 0px; padding-left: 20px; background-color: rgb(230, 230, 230); background-image: -webkit-linear-gradient(top, rgb(252, 252, 252), rgb(252, 252, 252) 25%, rgb(230, 230, 230)); text-shadow: rgb(255, 255, 255) 0px 1px 0px; color: rgb(85, 85, 85); }
+
+.comm_toolbar .comm_tool .tool_qiand:hover { background-image: linear-gradient(rgb(232, 231, 231), rgb(231, 229, 229) 25%, rgb(253, 253, 253)); color: rgb(138, 166, 83); }
+
+.comm_toolbar .comm_tool .tool_link { cursor: pointer; float: left; height: 30px; line-height: 30px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(204, 204, 204); text-align: center; font-size: 18px; padding-top: 0px; padding-right: 20px; padding-bottom: 0px; padding-left: 20px; background-color: rgb(230, 230, 230); background-image: -webkit-linear-gradient(top, rgb(252, 252, 252), rgb(252, 252, 252) 25%, rgb(230, 230, 230)); text-shadow: rgb(255, 255, 255) 0px 1px 0px; color: rgb(85, 85, 85); }
+
+.comm_toolbar .comm_tool .tool_link:hover { background-image: linear-gradient(rgb(232, 231, 231), rgb(231, 229, 229) 25%, rgb(253, 253, 253)); color: rgb(138, 166, 83); }
+
+.comm_toolbar .comm_tool .tool_code { cursor: pointer; float: left; height: 30px; line-height: 30px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(204, 204, 204); text-align: center; font-size: 18px; padding-top: 0px; padding-right: 20px; padding-bottom: 0px; padding-left: 20px; background-color: rgb(230, 230, 230); background-image: -webkit-linear-gradient(top, rgb(252, 252, 252), rgb(252, 252, 252) 25%, rgb(230, 230, 230)); text-shadow: rgb(255, 255, 255) 0px 1px 0px; color: rgb(85, 85, 85); }
+
+.comm_toolbar .comm_tool .tool_code:hover { background-image: linear-gradient(rgb(232, 231, 231), rgb(231, 229, 229) 25%, rgb(253, 253, 253)); color: rgb(138, 166, 83); }
+
+.comm_toolbar .comm_tool .comm_tijiao { cursor: pointer; position: absolute; right: 0px; top: 0px; height: 30px; width: 100px; text-align: center; text-shadow: rgb(255, 255, 255) 0px 1px 0px; color: rgb(85, 85, 85); line-height: 30px; font-size: 14px; font-weight: bold; border-left-width: 1px; border-left-style: solid; border-left-color: rgb(204, 204, 204); background-color: rgb(230, 230, 230); background-image: -webkit-linear-gradient(top, rgb(252, 252, 252), rgb(252, 252, 252) 25%, rgb(230, 230, 230)); }
+
+.comm_toolbar .comm_tool .comm_tijiao:hover { background-image: linear-gradient(rgb(232, 231, 231), rgb(231, 229, 229) 25%, rgb(253, 253, 253)); }
+
+.comm_toolbar .comm_tool .comm_tijiao input[type="submit"] { cursor: pointer; text-shadow: rgb(255, 255, 255) 0px 1px 0px; color: rgb(85, 85, 85); font-size: 14px; font-weight: bold; background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; outline-style: none; outline-width: initial; outline-color: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.comm_toolbar .comm_tool .cancel-reply { cursor: pointer; position: absolute; right: 101px; top: 0px; height: 30px; width: 100px; text-align: center; text-shadow: rgb(255, 255, 255) 0px 1px 0px; color: rgb(85, 85, 85); line-height: 30px; font-size: 14px; font-weight: bold; border-left-width: 1px; border-left-style: solid; border-left-color: rgb(204, 204, 204); background-color: rgb(230, 230, 230); background-image: -webkit-linear-gradient(top, rgb(252, 252, 252), rgb(252, 252, 252) 25%, rgb(230, 230, 230)); }
+
+.comm_toolbar .comm_tool .cancel-reply:hover { background-image: linear-gradient(rgb(232, 231, 231), rgb(231, 229, 229) 25%, rgb(253, 253, 253)); }
+
+.comm_toolbar .comm_tool .cancel-reply a { color: rgb(85, 85, 85); }
+
+.comm_toolbar .comm_tool .cancel-reply a:hover { text-decoration: none; }
+
+.comment-post .comm_infobox { z-index: 9999; display: none; position: absolute; width: 300px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; top: 0px; left: 0px; right: 0px; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-image: initial; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; box-shadow: rgb(255, 255, 255) 0px 1px 1px inset, rgba(0, 0, 0, 0.398438) 0px 2px 6px; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; background-position: initial initial; background-repeat: initial initial; }
+
+.comm_infobox input[type="submit"] { height: auto; box-shadow: rgba(0, 150, 0, 0.296875) 0px 0px 4px 1px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(92, 184, 92); color: rgb(255, 255, 255); padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; font-size: 14px; font-weight: 100; float: left; margin-top: 10px; margin-right: 20px; margin-bottom: 0px; margin-left: 0px; font-family: 'microsoft yahei'; cursor: pointer; background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.148438) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.148438) 50%, rgba(255, 255, 255, 0.148438) 75%, transparent 75%, transparent); background-size: 40px; background-position: initial initial; background-repeat: initial initial; }
+
+.comm_infobox .comm_rest { height: auto; box-shadow: rgba(0, 150, 0, 0.296875) 0px 0px 4px 1px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(0, 175, 240); color: rgb(255, 255, 255); padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; font-size: 14px; font-weight: 100; float: left; margin-top: 10px; margin-right: 20px; margin-bottom: 0px; margin-left: 0px; font-family: 'microsoft yahei'; cursor: pointer; background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.148438) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.148438) 50%, rgba(255, 255, 255, 0.148438) 75%, transparent 75%, transparent); background-size: 40px; background-position: initial initial; background-repeat: initial initial; }
+
+.comm_infobox .comm_close { box-shadow: rgba(0, 150, 0, 0.296875) 0px 0px 4px 1px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(248, 93, 0); color: rgb(255, 255, 255); padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; font-size: 14px; font-weight: 100; float: left; margin-top: 10px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; cursor: pointer; background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.148438) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.148438) 50%, rgba(255, 255, 255, 0.148438) 75%, transparent 75%, transparent); background-size: 40px; background-position: initial initial; background-repeat: initial initial; }
+
+.comm_infobox input[type="submit"]:hover, .comm_infobox .comm_close:hover, .comm_infobox .comm_rest { background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(0, 175, 240); cursor: pointer; background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.148438) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.148438) 50%, rgba(255, 255, 255, 0.148438) 75%, transparent 75%, transparent); background-size: 30px; background-position: initial initial; background-repeat: initial initial; }
+
+.comm_infobox input[type="text"] { width: 234px; }
+
+.comm_infobox p { float: left; width: 300px; padding-bottom: 10px; }
+
+.comm_infobox label { float: left; font-size: 18px; }
+
+.comm_infobox input { float: left; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-image: initial; height: 25px; padding-top: 0px; padding-right: 5px; padding-bottom: 0px; padding-left: 5px; outline-style: none; outline-width: initial; outline-color: initial; color: rgb(153, 153, 153); }
+
+.comm_infobox input:focus { border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(0, 175, 240); border-right-color: rgb(0, 175, 240); border-bottom-color: rgb(0, 175, 240); border-left-color: rgb(0, 175, 240); border-image: initial; color: rgb(51, 51, 51); }
+
+.comm_infobox img { margin-left: 10px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(240, 231, 231); background-size: initial; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; background-position: initial initial; background-repeat: initial initial; }
+
+.comm_infobox input[name="imgcode"] { width: 78px; }
+
+.smile { padding-top: 12px; padding-right: 12px; padding-bottom: 12px; padding-left: 12px; }
+
+.smile img { width: 22px; height: 22px; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(246, 246, 246); border-right-color: rgb(246, 246, 246); border-bottom-color: rgb(246, 246, 246); border-left-color: rgb(246, 246, 246); border-image: initial; }
+
+.smile img:hover { border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(0, 204, 255); border-right-color: rgb(0, 204, 255); border-bottom-color: rgb(0, 204, 255); border-left-color: rgb(0, 204, 255); border-image: initial; }
+
+.smile .arrow { background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/bg_msg2.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; width: 6px; height: 11px; overflow-x: hidden; overflow-y: hidden; position: absolute; left: -6px; top: 85px; background-position: -13px -9px; background-repeat: no-repeat no-repeat; }
+
+.smilebg { width: 217px; position: absolute; z-index: 999; height: 185px; display: none; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-image: initial; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; box-shadow: rgb(241, 241, 241) 0px 0px 10px; margin-top: -76px; margin-right: 0px; margin-bottom: 0px; margin-left: 45px; line-height: 20px; background-position: initial initial; background-repeat: initial initial; }
+
+#ajax_ok { color: red; font-weight: bold; }
+
+.vp, .vip, .vip1, .vip2, .vip3, .vip4, .vip5, .vip6, .vip7 { background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/vip.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; display: inline-block; overflow-x: hidden; overflow-y: hidden; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
+
+.vp { width: 16px; height: 16px; margin-bottom: -3px; background-position: -494px -3px; }
+
+.vp:hover { width: 19px; height: 18px; margin-top: -3px; margin-left: -3px; margin-bottom: -3px; background-position: -491px -19px; }
+
+.vip { width: 16px; height: 16px; margin-bottom: -3px; background-position: -494px -3px; }
+
+.vip:hover { width: 16px; height: 16px; margin-bottom: -3px; background-position: -515px -22px; }
+
+.vip1 { width: 46px; height: 14px; margin-bottom: -1px; background-position: -1px -2px; }
+
+.vip1:hover { width: 46px; height: 14px; margin-bottom: -1px; background-position: -1px -22px; }
+
+.vip2 { width: 46px; height: 14px; margin-bottom: -1px; background-position: -63px -2px; }
+
+.vip2:hover { width: 46px; height: 14px; margin-bottom: -1px; background-position: -63px -22px; }
+
+.vip3 { width: 46px; height: 14px; margin-bottom: -1px; background-position: -144px -2px; }
+
+.vip3:hover { width: 46px; height: 14px; margin-bottom: -1px; background-position: -144px -22px; }
+
+.vip4 { width: 46px; height: 14px; margin-bottom: -1px; background-position: -227px -2px; }
+
+.vip4:hover { width: 46px; height: 14px; margin-bottom: -1px; background-position: -227px -22px; }
+
+.vip5 { width: 46px; height: 14px; margin-bottom: -1px; background-position: -331px -2px; }
+
+.vip5:hover { width: 46px; height: 14px; margin-bottom: -1px; background-position: -331px -22px; }
+
+.vip6 { width: 46px; height: 14px; margin-bottom: -1px; background-position: -441px -2px; }
+
+.vip6:hover { width: 46px; height: 14px; margin-bottom: -1px; background-position: -441px -22px; }
+
+.vip7 { width: 46px; height: 14px; margin-bottom: -1px; background-position: -611px -2px; }
+
+.vip7:hover { width: 46px; height: 14px; margin-bottom: -1px; background-position: -611px -22px; }
+
+.wrap .main_right { float: right; width: 250px; }
+
+.main_right .sidebar { width: 100%; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(225, 230, 224); background-size: initial; margin-bottom: 10px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-position: initial initial; background-repeat: initial initial; }
+
+.sidebar h3 { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(205, 220, 176); background-size: initial; font-size: 14px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; color: rgb(63, 72, 44); font-weight: bold; text-shadow: rgb(255, 255, 255) 1px 1px 1px, rgba(250, 14, 14, 0.148438) 1px 2px 2px; border-top-left-radius: 4px; border-top-right-radius: 4px; background-position: initial initial; background-repeat: initial initial; }
+
+.sidebar ul { padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; }
+
+.sidebar ul li { line-height: 25px; background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/list_bg.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; padding-left: 8px; white-space: nowrap; overflow-x: hidden; overflow-y: hidden; text-overflow: ellipsis; background-position: 0px 11px; background-repeat: no-repeat no-repeat; }
+
+.sidebar ul li a { color: rgb(79, 114, 0); }
+
+.sidebar ul li a:hover { text-decoration: underline; }
+
+#logsearch { padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; display: inline-block; }
+
+#logsearch input[type="text"] { background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/search.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 20px; float: left; width: 145px; background-position: 0px 5px; background-repeat: no-repeat no-repeat; }
+
+#logsearch input[type="submit"] { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(138, 166, 83); background-size: initial; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; float: left; color: rgb(255, 255, 255); cursor: pointer; background-position: initial initial; background-repeat: initial initial; }
+
+#logsearch input[type="submit"]:hover { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(106, 132, 100); background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+#newcomment { width: 100%; }
+
+#newcomment li { background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
+
+#newcomment li .commimg { width: 40px; height: 40px; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; float: left; background-position: initial initial; background-repeat: initial initial; }
+
+#newcomment li .commimg img { width: 40px; height: 40px; }
+
+#newcomment li .info { float: left; margin-left: 10px; width: 170px; overflow-x: hidden; overflow-y: hidden; }
+
+#newcomment li .info .name { white-space: nowrap; text-overflow: ellipsis; overflow-x: hidden; overflow-y: hidden; }
+
+#bloggerinfo { display: inline-block; }
+
+#bloggerinfo #bloggerinfoimg img { width: 100%; height: auto; }
+
+#bloggerinfo .name { text-align: center; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px; }
+
+#bloggerinfo .name a { font-size: 14px; }
+
+#bloggerinfo .jieshao { color: rgb(99, 113, 96); line-height: 20px; text-indent: 2em; }
+
+#link li { background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
+
+.tooltip { font-size: 12px; position: absolute; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; z-index: 100000; opacity: 0.8; font-family: 'Microsoft Yahei'; }
+
+.tipsy-arrow { position: absolute; width: 0px; height: 0px; line-height: 0; border-right-width: 6px; border-bottom-width: 6px; border-left-width: 6px; border-right-style: dashed; border-left-style: dashed; border-bottom-color: rgb(0, 0, 0); border-image: initial; top: 0px; left: 20%; margin-left: -5px; border-bottom-style: solid; border-top-width: 0px; border-top-style: initial; border-top-color: initial; border-left-color: transparent; border-right-color: transparent; }
+
+.tipsy-arrow-n { border-bottom-color: rgb(145, 166, 129); }
+
+.tipsy-inner { background-color: rgb(145, 166, 129); color: rgb(255, 255, 255); max-width: 200px; padding-top: 5px; padding-right: 8px; padding-bottom: 4px; padding-left: 8px; text-align: center; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; }
+
+.footer { width: 980px; height: 120px; margin-top: 10px; margin-right: auto; margin-bottom: 0px; margin-left: auto; background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/footbg.jpg); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; text-align: center; padding-top: 50px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(255, 255, 255); font-family: 宋体; background-position: 50% 0%; background-repeat: no-repeat no-repeat; }
+
+.footer p { line-height: 25px; }
+
+.footer a { color: rgb(255, 255, 255); }
+
+#mobi_search { width: 100%; }
+
+#mobi_search form { padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; }
+
+#mobi_search form .search { float: left; padding-top: 10px; padding-right: 5px; padding-bottom: 10px; padding-left: 5px; }
+
+#mobi_search form .submit { float: left; padding-top: 10px; padding-right: 5px; padding-bottom: 10px; padding-left: 5px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(0, 175, 240); background-size: initial; color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+
+.huandeng { margin-top: 10px; margin-right: 10px; margin-bottom: 0px; margin-left: 10px; display: none; }
+
+.pagination1 .swiper-pagination-switch { border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; width: 20px !important; height: 5px !important; }
+
+.home-device, .swiper-container { margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; position: relative; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
+
+.home-device, .swiper-container, .swiper-slide { width: 100%; height: 148px; }
+
+.swiper-container { overflow-x: hidden; overflow-y: hidden; -webkit-backface-visibility: hidden; z-index: 1; }
+
+.swiper-wrapper { position: relative; width: 100%; -webkit-transition-property: -webkit-transform, left, top; -webkit-transform: translate3d(0px, 0px, 0px); -webkit-transition-duration: 0s; -webkit-transition-timing-function: ease; }
+
+.swiper-slide { float: left; }
+
+.swiper-wp8-horizontal { }
+
+.swiper-wp8-vertical { }
+
+.home-device .arrow-left, .home-device .arrow-right { position: absolute; top: 50%; margin-top: -15px; width: 17px; height: 30px; }
+
+.home-device .arrow-left { left: 10px; }
+
+.home-device .arrow-right { right: 10px; }
+
+.swiper-main { width: 100%; height: 148px; position: relative; }
+
+.pagination1, .sm-free, .sm-shadow { position: absolute; }
+
+.sm-shadow { bottom: -15px; width: 606px; height: 38px; left: 17px; background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/shadow.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.sm-free { width: 105px; height: 61px; background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/free.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: initial; right: -2px; top: -2px; z-index: 2; background-position: initial initial; background-repeat: initial initial; }
+
+.swiper1, .swiper1 .swiper-slide { width: 100%; height: 148px; }
+
+.pagination1 { text-align: center; margin-top: 0px; margin-right: auto; margin-bottom: 5px; margin-left: auto; bottom: 0px; left: 0px; z-index: 2; right: 0px; }
+
+.content-slide { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-position: initial initial; background-repeat: initial initial; }
+
+.cs-1, .cs-2 { float: left; width: 270px; margin-top: 10px; margin-bottom: 10px; }
+
+.cs-1 { margin-right: 20px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(51, 51, 51); background-size: initial; color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+
+.cs-2 { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(173, 46, 76); background-size: initial; color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+
+.pagination1 .swiper-pagination-switch { display: inline-block; width: 8px; height: 8px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(94, 94, 94); background-size: initial; box-shadow: rgb(85, 85, 85) 0px 1px 2px inset; margin-top: 0px; margin-right: 3px; margin-bottom: 0px; margin-left: 3px; cursor: pointer; background-position: initial initial; background-repeat: initial initial; }
+
+.demo-title, .sw-title { font-weight: 300; margin-top: 50px; margin-right: 0px; margin-bottom: 20px; margin-left: 0px; }
+
+.pagination1 .swiper-active-switch, .sw-content { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; background-position: initial initial; background-repeat: initial initial; }
+
+.sw-title { padding-top: 5px; padding-right: 20px; padding-bottom: 5px; padding-left: 20px; font-size: 41px; font-family: Lato, sans-serif; line-height: 50px; color: rgb(34, 34, 34); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(85, 85, 85); }
+
+.sw-content { border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; }
+
+.demo-title { text-align: center; font-size: 31px; font-family: Lato, Arial, Helvetica; line-height: 35px; }
+
+.swiper-slide img { height: 148px; width: 100%; }
+
+.mobi_head { display: none; width: 100%; height: 50px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(146, 179, 121); background-size: initial; position: relative; background-position: initial initial; background-repeat: initial initial; }
+
+.mobi_head h1 { position: absolute; left: 10px; top: 8px; font-size: 24px; }
+
+.mobi_head h1 a { color: rgb(255, 255, 255); }
+
+.mobi_head .mobi_nav { width: 34px; height: 21px; background-image: url(http://bbs.hasi.wang/content/templates/chenzm/images/navigation.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-size: 28px 20px; position: absolute; top: 15px; right: 10px; cursor: pointer; background-position: initial initial; background-repeat: no-repeat no-repeat; }
+
+.mobi_menu { position: fixed; z-index: 9999; width: 50%; height: 100%; top: 0px; right: -50%; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(68, 68, 68); background-size: initial; display: none; background-position: initial initial; background-repeat: initial initial; }
+
+.mobi_menu ul { padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; position: relative; }
+
+.mobi_menu ul li { text-align: left; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(85, 85, 85); line-height: 35px; }
+
+.mobi_menu ul li a { color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; }
+
+.mobi_menu .sub-nav { display: none; }
+
+#mobi_close { position: absolute; top: 10px; right: 10px; color: rgb(255, 255, 255); font-size: 15px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-color: rgb(255, 255, 255); border-image: initial; border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px; padding-top: 5px; padding-right: 6px; padding-bottom: 5px; padding-left: 6px; line-height: 0; margin-right: 5px; cursor: pointer; }
+
+.fhdb { display: none; position: fixed; bottom: 50px; right: 10px; font-size: 24px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-size: initial; color: rgb(103, 102, 102); padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; opacity: 0.6; -webkit-animation-duration: 1s; -webkit-animation-fill-mode: both; cursor: pointer; background-position: initial initial; background-repeat: initial initial; }
+
+.fhdb:hover { opacity: 1; -webkit-animation-name: tada; }
+
+@media screen and (max-width: 770px) { 
+  .header .head { width: 100%; }
+  .menu { width: 100%; }
+  .wrap { width: auto; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; }
+  .wrap .main_left { width: 100%; }
+  .wrap .main_right, .wrap .main_left .hot_box { display: none; }
+  .footer { width: 100%; }
+  .content img, .content div, .content pre, .content_box .content { max-width: 100%; }
+}
+
+@media screen and (max-width: 600px) { 
+  .menu, .header { display: none; }
+  .mobi_head, .huandeng { display: block; }
+  .content embed, .content video, .content audio { max-width: 100%; }
+  .head .topsearch { display: none; }
+}
+
+@media screen and (max-width: 540px) { 
+  .list_box ul li .thumimg, .list_box ul li .thumimg img { width: 120px; height: 100px; }
+  .list_box ul li .info { margin-left: 135px; }
+  .list_box ul li .info .date { display: none; }
+  .list_box ul li .info h2 { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(204, 204, 204); }
+  .list_box ul li .info .desc { line-height: 22px; height: 70px; }
+}
+
+@media screen and (max-width: 480px) { 
+  .content .log_a .zd_comm, .post_banquan .qrimg { display: none; }
+  .post_banquan ul { margin-left: 10px; }
+}
+
+@media screen and (max-width: 420px) { 
+  .comm_toolbar .comm_tool .tool_img, .comm_toolbar .comm_tool .tool_link, .comm_toolbar .comm_tool .tool_code { display: none; }
+}
